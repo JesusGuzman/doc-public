@@ -11,21 +11,23 @@ Endpoints Disponibles
 * `POST` /status
   
 POST /status
-========
+============
 
 Parametros:
+-----------
 
-``Merchant_ID``
-``Terminal_ID``
-``Amount``
-``Currency``
-``Exchange_ID``
-``TX_ID``
-``Status``
-``API_KEY``
+* ``Merchant_ID``
+* ``Terminal_ID``
+* ``Amount``
+* ``Currency``
+* ``Exchange_ID``
+* ``TX_ID``
+* ``Status``
+* ``API_KEY``
 
 
-Ejemplo con CURL: 
+Ejemplo con CURL:
+----------------- 
 
 .. code-block:: console
 
@@ -39,7 +41,8 @@ Ejemplo con CURL:
     --header 'Status: WAITING_CONFIRMATION' \
     --header 'API_KEY: a7dk20aksl3a9sn3asdb3Fas'
 
-Response: 
+Response:
+---------
 
 .. code-block:: console
 
@@ -55,12 +58,3 @@ Response:
     "payment_url": "ln9552eph0yq9qyyssqvwavuh8mc9gcvp8n39xp9cs3sgm56eyg4jxeyxajn6eppskelnwsgvy7fq7llmm8jjgcq5tkjny",
     "qr_url": "https://tinyurl.com/532ashcv9"
     }
-
-
-
-
-
-
-.. note::
-
-   El formato de la API es REST 4.4.2
