@@ -4,11 +4,14 @@ API Blokko
 **Blokko Gateway** es una API REST .
 A continuacion se describe la forma de integrar/conectarse a Blokko Gateway
 
-Endpoints Disponibles 
-=====================
+* IP: 35.192.13.236
 
-* `POST` /trx
-* `POST` /status
+* PORT: 5000
+
+* Endpoints disponibles:
+
+   * `POST` /trx   Envia una nueva Transaccion
+   * `POST` /status  Revisa el status de la transaccion
   
 POST /trx
 ============
@@ -22,10 +25,10 @@ Parametros:
 * ``Coin``
 * ``Currency``
 * ``Exchange_ID``
-    * CoinBase: 2
-    * CryptoCom: 4
-    * Binance: 5
-    * IBEX: 6
+    * ``CoinBase``: 2
+    * ``CryptoCom``: 4
+    * ``Binance``: 5
+    * ``IBEX``: 6
 * ``TX_ID``
 * ``Status``
 * ``API_KEY``
@@ -107,9 +110,16 @@ Parametros:
 * ``Amount``
 * ``Currency``
 * ``Exchange_ID``
+    * ``CoinBase``: 2
+    * ``CryptoCom``: 4
+    * ``Binance``: 5
+    * ``IBEX``: 6
 * ``TX_ID``
 * ``Status``
 * ``API_KEY``
+
+.. note::
+   Para ``API_KEY`` comunicarse con Blokko
 
 
 Ejemplo con CURL:
@@ -159,6 +169,7 @@ Response:
 ---------
 
 .. code-block:: console
+
     {
     "Amount": "1.00",
     "Currency": "USD",
@@ -168,3 +179,4 @@ Response:
     "TX_ID": "7",
     "Terminal_ID": "1"
     }
+
