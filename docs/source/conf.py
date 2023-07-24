@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Blokko Gateway'
-copyright = '2023, Blokko'
-author = 'Blokko'
+project = 'Samurai'
+copyright = '2023, Samurai'
+author = 'Samurai'
 
 release = '0.1'
 version = '0.1.0'
